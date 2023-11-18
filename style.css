@@ -60,9 +60,8 @@ header {
 
 .menu {
   display: none;
-  
 }
-
+  
 .overlay {
   height: 100%;
   width: 0;
@@ -74,6 +73,7 @@ header {
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
 }
+
 
 .overlay--active {
   width: 100%;
@@ -117,12 +117,12 @@ header {
     font-size: 40px;
   }
   .logo{
-    width: 170px;
+    width: 180px;
     height: 26px;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 950px) {
   .nav__links,
   .cta {
     display: none;
