@@ -106,6 +106,7 @@ header {
   display: block;
 }
 
+
 .reg1 {
   display: flex;
   flex-direction: column;
@@ -118,8 +119,6 @@ header {
     display: none;
 }
 
-
-
 .overlay .close {
   position: absolute;
   top: 20px;
@@ -128,10 +127,82 @@ header {
   color: white;
 }
 
-@media screen and (max-width: 450px) {
+.search{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 50px;
+    align-items: center;
+}
+
+
+.disc{
+    width: 205px;
+    display: flex;
+    gap: 15px;
+}
+
+.disc a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+input{
+    width: 350px;
+    height: 40px;
+    border: none;
+    background-color: #292929;
+    border-radius: 50px;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.cartt{
+    width: 255px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart{
+    width: 37px;
+    height: 31px;
+    background-image: url(IMG/Cart.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    right: 0;
+}
+
+.cartt1{
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
   .logo{
     width: 180px;
     height: 26px;
+  }
+  .search{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cartt{
+    display: none;
   }
 }
 
@@ -151,4 +222,7 @@ header {
     flex-direction: column;
     gap: 5px;
 }
+
+.disc{width: auto;}
+.cartt{width: auto;}
 }
