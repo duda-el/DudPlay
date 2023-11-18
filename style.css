@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #292929;
+}
+
+.logo {
+  width: 205px;
+  height: 30px;
+  background-image: url(IMG/DUDPLAY.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.cta-1,
+.overlay__content a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.reg {
+  display: flex;
+  gap: 15px;
+}
+
+.cta {
+  padding: 12px 22px;
+  background-color: #f15a22;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-1 {
+  padding: 12px 22px;
+  background-color: #2a343a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #292929;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+}
+
+.reg1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: white;
+}
+
+@media screen and (max-width: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+  }
+  .logo{
+    width: 170px;
+    height: 26px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
