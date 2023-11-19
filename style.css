@@ -4,8 +4,8 @@
   padding: 0;
 }
 
-body{
-    background-color: #111111;
+body {
+  background-color: #111111;
 }
 
 header {
@@ -25,7 +25,6 @@ header {
   cursor: pointer;
 }
 
-
 .nav__links a,
 .cta,
 .cta-1,
@@ -37,11 +36,11 @@ header {
 }
 
 .nav__links li a {
-    transition: color 0.3s ease 0s;
-  }
+  transition: color 0.3s ease 0s;
+}
 
 .nav__links li a:hover {
-    color: #f15a22;
+  color: #f15a22;
 }
 
 .nav__links {
@@ -74,7 +73,7 @@ header {
 .menu {
   display: none;
 }
-  
+
 .overlay {
   height: 100%;
   width: 0;
@@ -86,7 +85,6 @@ header {
   overflow-x: hidden;
   transition: width 0.5s ease 0s;
 }
-
 
 .overlay--active {
   width: 100%;
@@ -106,7 +104,6 @@ header {
   display: block;
 }
 
-
 .reg1 {
   display: flex;
   flex-direction: column;
@@ -115,8 +112,8 @@ header {
   text-align: center;
 }
 
-.men{
-    display: none;
+.men {
+  display: none;
 }
 
 .overlay .close {
@@ -127,81 +124,68 @@ header {
   color: white;
 }
 
-.search{
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 50px;
-    align-items: center;
+.search {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 50px;
+  align-items: center;
 }
 
-
-.disc{
-    width: 205px;
-    display: flex;
-    gap: 15px;
+.disc {
+  width: 205px;
+  display: flex;
+  gap: 15px;
 }
 
-.disc a{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
+.disc a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
-input{
-    width: 350px;
-    height: 40px;
-    border: none;
-    background-color: #292929;
-    border-radius: 50px;
-    color: white;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: "Montserrat", sans-serif;
+input {
+  width: 350px;
+  height: 40px;
+  border: none;
+  background-color: #292929;
+  border-radius: 50px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Montserrat", sans-serif;
 }
 
-
-.cartt{
-    width: 255px;
-    display: flex;
-    justify-content: flex-end;
+.cartt {
+  width: 255px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.cart{
-    width: 37px;
-    height: 31px;
-    background-image: url(IMG/Cart.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    cursor: pointer;
-    right: 0;
+.cart {
+  width: 33px;
+  height: 28px;
+  background-image: url(IMG/Cart.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  right: 0;
 }
 
-.cartt1{
-    margin-top: 25px;
+.cartt1 {
+  margin-top: 25px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 700px) {
-  .logo{
+  .logo {
     width: 180px;
     height: 26px;
   }
-  .search{
+  .search {
     flex-direction: column;
     gap: 20px;
   }
-  .cartt{
+  .cartt {
     display: none;
   }
 }
@@ -217,12 +201,16 @@ input{
     border-radius: 0;
     background-color: white;
   }
-  .men{
+  .men {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
+  }
 
-.disc{width: auto;}
-.cartt{width: auto;}
+  .disc {
+    width: auto;
+  }
+  .cartt {
+    width: auto;
+  }
 }
