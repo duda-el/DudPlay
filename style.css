@@ -176,6 +176,83 @@ input {
   margin-top: 25px;
 }
 
+.countdown {
+  width: 100%;
+  height: 700px;
+  background-image: url(IMG/gta.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 90px;
+  color: white;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+.cubes {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+  width: 150px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cubes .cube h2 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 100px;
+}
+
+.cubes .cube h3 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+button {
+  width: 180px;
+  height: 65px;
+  border: none;
+  background-color: #f15a13;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 700px) {
   .logo {
     width: 180px;
@@ -187,6 +264,9 @@ input {
   }
   .cartt {
     display: none;
+  }
+  .countdown{
+    background-image: url(IMG/gtaaa.jpg);
   }
 }
 
@@ -212,5 +292,36 @@ input {
   }
   .cartt {
     width: auto;
+  }
+  .countdown {
+    height: 900px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .cubes {
+    gap: 120px;
+    flex-direction: column;
+  }
+
+  .cube {
+    width: 50px;
+    height: 40px;
+    gap: 20px;
+  }
+
+  .cubes .cube h2 {
+    font-size: 80px;
+    
+  }
+
+  .cubes .cube h3 {
+    font-size: 25px;
   }
 }
